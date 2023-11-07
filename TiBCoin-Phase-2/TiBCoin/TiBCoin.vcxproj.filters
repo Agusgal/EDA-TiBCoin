@@ -1,0 +1,245 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files\App">
+      <UniqueIdentifier>{103f73f6-ba87-4291-b36c-03b6c5700894}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\App">
+      <UniqueIdentifier>{d7757a0c-5ba4-4df3-a665-2263db6293b9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\App\Gui">
+      <UniqueIdentifier>{8598dc1d-1cbf-4a41-88e0-785dd69274a4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\App\Gui">
+      <UniqueIdentifier>{995073d1-e0bf-4b14-b1ba-744f2f60f073}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Lib">
+      <UniqueIdentifier>{2bf87419-c6d2-447d-b9da-5c9c2aab0e2d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Lib\Imgui">
+      <UniqueIdentifier>{5663eea5-9ea7-453c-825b-f001207fb7d5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\App\BlockChain">
+      <UniqueIdentifier>{b677f9e4-3d58-4b81-b84c-c3f69e58f0d6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\App\BlockChain\Blocks">
+      <UniqueIdentifier>{249e7077-17af-42b3-9812-196d9993af24}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\App\BlockChain\Blocks\Transactions">
+      <UniqueIdentifier>{c9d9898f-c693-4dbc-99e9-ce959f490807}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\App\Blockchain">
+      <UniqueIdentifier>{a220cfcf-5304-4a93-8ed5-72c3e57e6a9e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\App\Blockchain\Blocks">
+      <UniqueIdentifier>{92972989-8eb8-4699-a67b-21a11ea963b4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\App\Blockchain\Blocks\Transactions">
+      <UniqueIdentifier>{05b6c7ae-73f9-4ec3-a34c-2cdf81bd2670}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\App\Blockchain\Nodes">
+      <UniqueIdentifier>{a398c759-17ad-4b08-b1f3-4c5cfafcc642}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\App\Blockchain\Nodes\Client">
+      <UniqueIdentifier>{eecc74e5-074c-4d60-8239-01d9fb6fed3e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\App\Blockchain\Nodes\Server">
+      <UniqueIdentifier>{99451acd-2601-4600-9480-8916b0d06192}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\App\BlockChain\Nodes">
+      <UniqueIdentifier>{07fb5ae6-a944-4ddd-81f3-10ba29ebd8b5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\App\BlockChain\Nodes\Client">
+      <UniqueIdentifier>{3179672c-41c1-4515-969f-b2435a82727d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\App\BlockChain\Nodes\Server">
+      <UniqueIdentifier>{48eb0b35-df4a-4e30-8e87-f2f1114a64d3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\App\Actions">
+      <UniqueIdentifier>{1e8820e2-a3d7-4f65-b52d-0bc7943f0c9d}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\Source\App\Gui\Gui.cpp">
+      <Filter>Source Files\App\Gui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\App\App.cpp">
+      <Filter>Source Files\App</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Lib\ImGui\imgui.cpp">
+      <Filter>Lib\Imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Lib\ImGui\imgui_demo.cpp">
+      <Filter>Lib\Imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Lib\ImGui\imgui_draw.cpp">
+      <Filter>Lib\Imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Lib\ImGui\imgui_impl_allegro5.cpp">
+      <Filter>Lib\Imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Lib\ImGui\imgui_tables.cpp">
+      <Filter>Lib\Imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Lib\ImGui\imgui_widgets.cpp">
+      <Filter>Lib\Imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Lib\ImGui\imgui_stdlib.cpp">
+      <Filter>Lib\Imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Lib\ImGuiFileDialog\ImGuiFileDialog.cpp">
+      <Filter>Lib\Imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\App\BlockChain\BlockChain.cpp">
+      <Filter>Source Files\App\BlockChain</Filter>
+    </ClCompile>
+    <ClCompile Include="Transaction.cpp">
+      <Filter>Source Files\App\BlockChain\Blocks\Transactions</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\App\BlockChain\Blocks\Block.cpp">
+      <Filter>Source Files\App\BlockChain\Blocks</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\App\BlockChain\Blocks\Merkle.cpp">
+      <Filter>Source Files\App\BlockChain\Blocks</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\App\Client\Client.cpp">
+      <Filter>Source Files\App\BlockChain\Nodes\Client</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\App\BlockChain\Nodes\Node.cpp">
+      <Filter>Source Files\App\BlockChain\Nodes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\App\Server\Server.cpp">
+      <Filter>Source Files\App\BlockChain\Nodes\Server</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\App\BlockChain\Nodes\NodeFull.cpp">
+      <Filter>Source Files\App\BlockChain\Nodes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\App\BlockChain\Nodes\NodeSPV.cpp">
+      <Filter>Source Files\App\BlockChain\Nodes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\App\Client\PostClient.cpp">
+      <Filter>Source Files\App\BlockChain\Nodes\Client</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\App\Client\GetClient.cpp">
+      <Filter>Source Files\App\BlockChain\Nodes\Client</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Source\App\Gui\Gui.h">
+      <Filter>Header Files\App\Gui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\App\App.h">
+      <Filter>Header Files\App</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Lib\ImGui\imconfig.h">
+      <Filter>Lib\Imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Lib\ImGui\imgui.h">
+      <Filter>Lib\Imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Lib\ImGui\imgui_impl_allegro5.h">
+      <Filter>Lib\Imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Lib\ImGui\imgui_internal.h">
+      <Filter>Lib\Imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Lib\ImGui\imstb_rectpack.h">
+      <Filter>Lib\Imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Lib\ImGui\imstb_textedit.h">
+      <Filter>Lib\Imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Lib\ImGui\imstb_truetype.h">
+      <Filter>Lib\Imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Lib\ImGui\imgui_stdlib.h">
+      <Filter>Lib\Imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Lib\ImGuiFileDialog\ImGuiFileDialog.h">
+      <Filter>Lib\Imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Lib\ImGuiFileDialog\ImGuiFileDialogConfig.h">
+      <Filter>Lib\Imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\App\BlockChain\Blocks\json.hpp">
+      <Filter>Source Files\App\BlockChain\Blocks</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\App\BlockChain\BlockChain.h">
+      <Filter>Header Files\App\Blockchain</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\App\BlockChain\Blocks\Block.h">
+      <Filter>Header Files\App\Blockchain\Blocks</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\App\BlockChain\Blocks\Transactions\Transaction.h">
+      <Filter>Header Files\App\Blockchain\Blocks\Transactions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\App\BlockChain\Blocks\Merkle.h">
+      <Filter>Header Files\App\Blockchain\Blocks\Transactions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\App\Client\Client.h">
+      <Filter>Header Files\App\Blockchain\Nodes\Client</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\App\Server\Server.h">
+      <Filter>Header Files\App\Blockchain\Nodes\Server</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\App\BlockChain\Nodes\Node.h">
+      <Filter>Header Files\App\Blockchain\Nodes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\App\BlockChain\Nodes\NodeFull.h">
+      <Filter>Header Files\App\Blockchain\Nodes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\App\BlockChain\Nodes\NodeSPV.h">
+      <Filter>Header Files\App\Blockchain\Nodes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\App\Client\PostClient.h">
+      <Filter>Header Files\App\Blockchain\Nodes\Client</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\App\Client\BlockClient.h">
+      <Filter>Header Files\App\Blockchain\Nodes\Client</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\App\Client\FilterClient.h">
+      <Filter>Header Files\App\Blockchain\Nodes\Client</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\App\Client\GetBlockClient.h">
+      <Filter>Header Files\App\Blockchain\Nodes\Client</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\App\Client\GetClient.h">
+      <Filter>Header Files\App\Blockchain\Nodes\Client</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\App\Client\GetHeaderClient.h">
+      <Filter>Header Files\App\Blockchain\Nodes\Client</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\App\Client\MerkleClient.h">
+      <Filter>Header Files\App\Blockchain\Nodes\Client</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\App\Client\TransactionClient.h">
+      <Filter>Header Files\App\Blockchain\Nodes\Client</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\App\Client\AllClients.h">
+      <Filter>Header Files\App\Blockchain\Nodes\Client</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\App\Actions\Actions.h">
+      <Filter>Header Files\App\Actions</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\Source\App\BlockChain\a.json">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+</Project>

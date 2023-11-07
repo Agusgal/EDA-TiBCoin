@@ -1,0 +1,32 @@
+#pragma once
+#pragma once
+#include "Node.h"
+#include "../../BlockChain/Blocks/json.hpp"
+
+class NodeSPV : public Node
+{
+public:
+	NodeSPV(boost::asio::io_context&, const std::string&, const unsigned int, const unsigned int);
+	~NodeSPV();
+
+	virtual void transaction(const unsigned int, const std::string& wallet, const unsigned int amount);
+
+	virtual void postBlock(const unsigned int, const std::string& blockID) {};
+	virtual void postMerkleBlock(const unsigned int, const std::string& blockID, const std::string& transID) {};
+
+	virtual void postFilter(const unsigned int, const std::string& key);
+
+	virtual void getBlocks(const unsigned int, const std::string& blockID, const unsigned int count) {};
+	virtual void getBlockHeaders(const unsigned int, const std::string& blockID, const unsigned int count);
+
+	virtual std::vector<Actions> getActions(void);
+
+	virtual void perform();
+
+private:
+	virtual const std::string getResponse(const std::string&, const boost::asio::ip::tcp::endpoint&);
+	virtual const std::string postResponse(const std::string&, const boost::asio::ip::tcp::endpoint&);
+
+	//SPV Node has only headers
+	nlohmann::json headers;
+};

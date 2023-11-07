@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\Lib\ImGuiFileDialog\ImGuiFileDialog.cpp" />
+    <ClCompile Include="..\Lib\ImGui\imgui.cpp" />
+    <ClCompile Include="..\Lib\ImGui\imgui_demo.cpp" />
+    <ClCompile Include="..\Lib\ImGui\imgui_draw.cpp" />
+    <ClCompile Include="..\Lib\ImGui\imgui_impl_allegro5.cpp" />
+    <ClCompile Include="..\Lib\ImGui\imgui_stdlib.cpp" />
+    <ClCompile Include="..\Lib\ImGui\imgui_tables.cpp" />
+    <ClCompile Include="..\Lib\ImGui\imgui_widgets.cpp" />
+    <ClCompile Include="..\Source\App\App.cpp" />
+    <ClCompile Include="..\Source\Blockchain\BlockChain.cpp" />
+    <ClCompile Include="..\Source\Blockchain\Blocks\Block.cpp" />
+    <ClCompile Include="..\Source\Blockchain\Blocks\Merkle.cpp" />
+    <ClCompile Include="..\Source\Gui\Gui.cpp" />
+    <ClCompile Include="..\Source\Gui\GuiDisplayInfo.cpp" />
+    <ClCompile Include="..\Source\main.cpp" />
+    <ClCompile Include="..\Source\Nodes\Client\BlockClient.cpp" />
+    <ClCompile Include="..\Source\Nodes\Client\Client.cpp" />
+    <ClCompile Include="..\Source\Nodes\Client\GetClient.cpp" />
+    <ClCompile Include="..\Source\Nodes\Client\mainClient.cpp" />
+    <ClCompile Include="..\Source\Nodes\Client\PostClient.cpp" />
+    <ClCompile Include="..\Source\Nodes\Node.cpp" />
+    <ClCompile Include="..\Source\Nodes\NodeFull.cpp" />
+    <ClCompile Include="..\Source\Nodes\NodeMiner.cpp" />
+    <ClCompile Include="..\Source\Nodes\NodeSPV.cpp" />
+    <ClCompile Include="..\Source\Nodes\Server\Server.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Lib\ImGuiFileDialog\ImGuiFileDialog.h" />
+    <ClInclude Include="..\Lib\ImGuiFileDialog\ImGuiFileDialogConfig.h" />
+    <ClInclude Include="..\Lib\ImGui\imconfig.h" />
+    <ClInclude Include="..\Lib\ImGui\imgui.h" />
+    <ClInclude Include="..\Lib\ImGui\imgui_impl_allegro5.h" />
+    <ClInclude Include="..\Lib\ImGui\imgui_internal.h" />
+    <ClInclude Include="..\Lib\ImGui\imgui_stdlib.h" />
+    <ClInclude Include="..\Lib\ImGui\imstb_rectpack.h" />
+    <ClInclude Include="..\Lib\ImGui\imstb_textedit.h" />
+    <ClInclude Include="..\Lib\ImGui\imstb_truetype.h" />
+    <ClInclude Include="..\Source\Actions\Actions.h" />
+    <ClInclude Include="..\Source\App\App.h" />
+    <ClInclude Include="..\Source\Blockchain\BlockChain.h" />
+    <ClInclude Include="..\Source\Blockchain\Blocks\Block.h" />
+    <ClInclude Include="..\Source\Blockchain\Blocks\json.hpp" />
+    <ClInclude Include="..\Source\Blockchain\Blocks\Merkle.h" />
+    <ClInclude Include="..\Source\Gui\Gui.h" />
+    <ClInclude Include="..\Source\Gui\GuiDisplayInfo.h" />
+    <ClInclude Include="..\Source\Nodes\Client\AllClients.h" />
+    <ClInclude Include="..\Source\Nodes\Client\BlockClient.h" />
+    <ClInclude Include="..\Source\Nodes\Client\Client.h" />
+    <ClInclude Include="..\Source\Nodes\Client\FilterClient.h" />
+    <ClInclude Include="..\Source\Nodes\Client\GetBlockClient.h" />
+    <ClInclude Include="..\Source\Nodes\Client\GetClient.h" />
+    <ClInclude Include="..\Source\Nodes\Client\GetHeaderClient.h" />
+    <ClInclude Include="..\Source\Nodes\Client\MerkleClient.h" />
+    <ClInclude Include="..\Source\Nodes\Client\PostClient.h" />
+    <ClInclude Include="..\Source\Nodes\Client\TransactionClient.h" />
+    <ClInclude Include="..\Source\Nodes\Node.h" />
+    <ClInclude Include="..\Source\Nodes\NodeFull.h" />
+    <ClInclude Include="..\Source\Nodes\NodeMiner.h" />
+    <ClInclude Include="..\Source\Nodes\NodeSPV.h" />
+    <ClInclude Include="..\Source\Nodes\Server\Server.h" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{d12bf49d-6f5d-4e3a-9a2b-2a6917dce3c4}</ProjectGuid>
+    <RootNamespace>TibCoinPhase3</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions);_CRT_SECURE_NO_WARNINGS</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

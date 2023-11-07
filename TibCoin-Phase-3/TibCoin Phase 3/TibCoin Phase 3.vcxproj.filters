@@ -1,0 +1,224 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Files\BlockChain">
+      <UniqueIdentifier>{1e388596-d7c2-4353-abce-4bf3a8597dd5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Libraries">
+      <UniqueIdentifier>{e6cc3858-c863-41f3-98ab-b702d21540af}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Libraries\ImGui">
+      <UniqueIdentifier>{a140cde4-7feb-4b47-b22b-ee29b9a6ce19}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Files\App">
+      <UniqueIdentifier>{ab78e4a8-256f-4284-9f6e-bd4ce4de5a2d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Files\Nodes">
+      <UniqueIdentifier>{1063ceba-ae05-40dc-812a-1e6aca320eeb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Files\Actions">
+      <UniqueIdentifier>{d0fd0e63-0648-4106-98e1-7b6efe9e26be}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Files\Gui">
+      <UniqueIdentifier>{55c9ecb7-2178-4b31-be30-23adaf3cda34}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Files\BlockChain\Blocks">
+      <UniqueIdentifier>{cfd2e271-f5b7-475c-a3ae-ebfad0907fcb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Files\Nodes\Client">
+      <UniqueIdentifier>{3ef35226-46b9-4420-8720-2bdcd1c19264}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Files\Nodes\Server">
+      <UniqueIdentifier>{b8e9566a-4da9-4502-a1bf-5c4bd3e2bb89}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Files\Gui\GuiDisplayInfo">
+      <UniqueIdentifier>{28b407f9-4897-4993-ba1f-e2f0b09071a8}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\Lib\ImGui\imgui.cpp">
+      <Filter>Libraries\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Lib\ImGui\imgui_demo.cpp">
+      <Filter>Libraries\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Lib\ImGui\imgui_draw.cpp">
+      <Filter>Libraries\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Lib\ImGui\imgui_impl_allegro5.cpp">
+      <Filter>Libraries\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Lib\ImGui\imgui_stdlib.cpp">
+      <Filter>Libraries\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Lib\ImGui\imgui_tables.cpp">
+      <Filter>Libraries\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Lib\ImGui\imgui_widgets.cpp">
+      <Filter>Libraries\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Lib\ImGuiFileDialog\ImGuiFileDialog.cpp">
+      <Filter>Libraries\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\main.cpp">
+      <Filter>Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Blockchain\Blocks\Block.cpp">
+      <Filter>Files\BlockChain\Blocks</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Blockchain\Blocks\Merkle.cpp">
+      <Filter>Files\BlockChain\Blocks</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Blockchain\BlockChain.cpp">
+      <Filter>Files\BlockChain</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\App\App.cpp">
+      <Filter>Files\App</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Gui\Gui.cpp">
+      <Filter>Files\Gui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Nodes\Client\BlockClient.cpp">
+      <Filter>Files\Nodes\Client</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Nodes\Client\Client.cpp">
+      <Filter>Files\Nodes\Client</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Nodes\Client\GetClient.cpp">
+      <Filter>Files\Nodes\Client</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Nodes\Client\mainClient.cpp">
+      <Filter>Files\Nodes\Client</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Nodes\Client\PostClient.cpp">
+      <Filter>Files\Nodes\Client</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Nodes\Server\Server.cpp">
+      <Filter>Files\Nodes\Server</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Nodes\Node.cpp">
+      <Filter>Files\Nodes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Nodes\NodeFull.cpp">
+      <Filter>Files\Nodes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Nodes\NodeSPV.cpp">
+      <Filter>Files\Nodes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Nodes\NodeMiner.cpp">
+      <Filter>Files\Nodes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Gui\GuiDisplayInfo.cpp">
+      <Filter>Files\Gui\GuiDisplayInfo</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Lib\ImGui\imconfig.h">
+      <Filter>Libraries\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Lib\ImGui\imgui.h">
+      <Filter>Libraries\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Lib\ImGui\imgui_impl_allegro5.h">
+      <Filter>Libraries\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Lib\ImGui\imgui_internal.h">
+      <Filter>Libraries\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Lib\ImGui\imgui_stdlib.h">
+      <Filter>Libraries\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Lib\ImGui\imstb_rectpack.h">
+      <Filter>Libraries\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Lib\ImGui\imstb_textedit.h">
+      <Filter>Libraries\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Lib\ImGui\imstb_truetype.h">
+      <Filter>Libraries\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Lib\ImGuiFileDialog\ImGuiFileDialog.h">
+      <Filter>Libraries\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Lib\ImGuiFileDialog\ImGuiFileDialogConfig.h">
+      <Filter>Libraries\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Blockchain\Blocks\Block.h">
+      <Filter>Files\BlockChain\Blocks</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Blockchain\Blocks\json.hpp">
+      <Filter>Files\BlockChain\Blocks</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Blockchain\Blocks\Merkle.h">
+      <Filter>Files\BlockChain\Blocks</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Blockchain\BlockChain.h">
+      <Filter>Files\BlockChain</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\App\App.h">
+      <Filter>Files\App</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Actions\Actions.h">
+      <Filter>Files\Actions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Gui\Gui.h">
+      <Filter>Files\Gui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Nodes\Client\AllClients.h">
+      <Filter>Files\Nodes\Client</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Nodes\Client\BlockClient.h">
+      <Filter>Files\Nodes\Client</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Nodes\Client\Client.h">
+      <Filter>Files\Nodes\Client</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Nodes\Client\FilterClient.h">
+      <Filter>Files\Nodes\Client</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Nodes\Client\GetBlockClient.h">
+      <Filter>Files\Nodes\Client</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Nodes\Client\GetClient.h">
+      <Filter>Files\Nodes\Client</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Nodes\Client\GetHeaderClient.h">
+      <Filter>Files\Nodes\Client</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Nodes\Client\MerkleClient.h">
+      <Filter>Files\Nodes\Client</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Nodes\Client\PostClient.h">
+      <Filter>Files\Nodes\Client</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Nodes\Client\TransactionClient.h">
+      <Filter>Files\Nodes\Client</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Nodes\Server\Server.h">
+      <Filter>Files\Nodes\Server</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Nodes\Node.h">
+      <Filter>Files\Nodes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Nodes\NodeFull.h">
+      <Filter>Files\Nodes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Nodes\NodeSPV.h">
+      <Filter>Files\Nodes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Nodes\NodeMiner.h">
+      <Filter>Files\Nodes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Gui\GuiDisplayInfo.h">
+      <Filter>Files\Gui\GuiDisplayInfo</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
